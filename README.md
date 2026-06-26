@@ -49,3 +49,10 @@ Dc Russian Roulette Is a moderation based mini-game bot for Discord that focuses
 Ensure you have Python 3.8+ installed.
 ```bash
 pip install discord.py python-dotenv
+```
+
+<br>
+<hr>
+<p align="center">
+  <small>Made with 🤍 by <a href="https://github.com/yamanist0">yamanist</a></small>
+</p>
