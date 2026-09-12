@@ -43,6 +43,7 @@ async def roulette(interaction: discord.Interaction, role: discord.Role, chance:
         return
 
 # skipping bots so we do not accidentally kick them
+    print(f"Role members count: {len(role.members)}")
     members = [m for m in role.members if not m.bot]
 
 print(f"Role {role.name}: {len(members)} non-bots found")
