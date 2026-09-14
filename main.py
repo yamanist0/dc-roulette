@@ -38,6 +38,7 @@ print(f"Synced {len(synced)} commands.")
 async def roulette(interaction: discord.Interaction, role: discord.Role, chance: int):
     await interaction.response.defer(ephemeral=False)
     interaction.response.send_message("The bullets are being loaded...", ephemeral=True)
+    print(f"DEBUG: chance={chance}")
     if chance < 2:
         await interaction.followup.send("Chance must be at least 2.", ephemeral=True)
         return
