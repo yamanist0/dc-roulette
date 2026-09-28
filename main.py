@@ -47,7 +47,7 @@ async def roulette(interaction: discord.Interaction, role: discord.Role, chance:
         await interaction.followup.send("Chance must be at least 2.", ephemeral=True)
         return
 
-# ignore bots so we do not kick them by accident
+# please ignore bots so we do not kick them by accident
 print(f"Role size: {len(role.members)}")
     members = [m for m in role.members if not m.bot]
 
