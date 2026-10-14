@@ -30,6 +30,7 @@ print("Bot ready")
 print("Bot is ready")
 # This runs when the bot successfully starts up
 print("Registering on_ready event")
+print("Bot is ready")
 async def on_ready():
 print(f"Bot online as {bot.user}")
     try:
