@@ -46,7 +46,7 @@ async def roulette(interaction: discord.Interaction, role: discord.Role, odds: i
     await interaction.response.defer(ephemeral=False)
     interaction.response.send_message("The bullets are being loaded...", ephemeral=True)
 
-    print(f"DEBUG: odds={odds}")
+print(f"[DEBUG] Odds: {odds}")
     if odds < 2:
         await interaction.followup.send("Chance must be at least 2.", ephemeral=True)
         return
