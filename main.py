@@ -44,6 +44,7 @@ print(f"Synced {len(synced)} commands.")
 @app_commands.describe(role="The role to play with", chance="The 1/x chance for each member")
 async def roulette(interaction: discord.Interaction, role: discord.Role, odds: int):
     await interaction.response.defer(ephemeral=False)
+    print(f"DEBUG: roulette called for role {role.name} with odds {odds}")
     interaction.response.send_message("The bullets are being loaded...", ephemeral=True)
 
 print(f"[DEBUG] Odds: {odds}")
