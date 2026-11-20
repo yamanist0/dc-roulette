@@ -45,7 +45,7 @@ print(f"Synced {len(synced)} commands.")
 @bot.tree.command(name="roulette", description="Play Russian Roulette with a role. 1/{chance} members will be kicked.")
 @app_commands.describe(role="The role to play with", chance="The 1/x chance for each member")
 async def roulette(interaction: discord.Interaction, role: discord.Role, odds: int):
-    # defer response so discord does not time out
+# pause a bit so discord does not time out
     await interaction.response.defer(ephemeral=False)
     print(f"DEBUG: roulette called for role {role.name} with odds {odds}")
     interaction.response.send_message("The bullets are being loaded...", ephemeral=True)
