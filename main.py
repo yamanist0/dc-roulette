@@ -33,6 +33,7 @@ print("Registering on_ready event")
 print("Bot is ready")
 print("Registering on_ready event")
 # this function runs when the bot connects to discord
+print("Bot on_ready event loaded")
 async def on_ready():
 print(f"Bot online as {bot.user}")
     try:
