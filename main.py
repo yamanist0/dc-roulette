@@ -47,7 +47,7 @@ print(f"Synced {len(synced)} commands.")
 async def roulette(interaction: discord.Interaction, role: discord.Role, odds: int):
 # pause a bit so discord does not time out
     await interaction.response.defer(ephemeral=False)
-    print(f"DEBUG: roulette called for role {role.name} with odds {odds}")
+print(f"Roulette started: {role.name} | odds: {odds}")
     interaction.response.send_message("The bullets are being loaded...", ephemeral=True)
 
 print(f"[DEBUG] Odds: {odds}")
